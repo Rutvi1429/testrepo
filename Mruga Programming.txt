@@ -1,0 +1,159 @@
+?ifelse()
+q()
+x=matrix(c(68,75,57,79,32,45,33,31),byrow=TRUE,nrow=2)
+x
+help(matrix)
+dimnames=list(c("prefer present method","prefer new method"),c("north","sowth","central","west")
+dimnames=list(c("prefer present method","prefer new method"),c("north","sowth","central","west"))
+x=matrix(c(68,75,57,79,32,45,33,31),byrow=TRUE,nrow=2)
+x
+help(matrix)
+x1=matrix(c(68,75,57,79,32,45,33,31),byrow=TRUE,nrow=2,dimnames=list(c("prefer present method","prefer new method"),c("north","sowth","central","west")))
+x1
+class(x1)
+typeof(x1)
+row1=c(68,75,57,79)
+row2=c(32,45,33,31)
+x2=rbind(row1,row2)
+x2
+name.row1=names(c("prefer present method","prefer new method ")
+)
+name.row1
+help(names)
+row1
+names(r1)=name.row1
+names(row1)=name.row1
+names(row1)
+class(x2)
+typeof(x2)
+x3=data.frame(row1,row2)
+x3
+class(x3)
+typeof(x3)
+x4=tr(x1)
+x4=t(x1)
+x4
+x5=as.dataframe(x4)
+x5=as.data.aframe(x4)
+x5=as.data.frame(x4)
+x5
+x6=as.data.frame(x1)
+x6
+class(x6)
+typeof(x6)
+#hypo H0: opinion is independent of region
+#     H1: opinion is not independent of region
+result=chi.sq(x6)
+#     H1: opinion is not independent of region
+result=chisq.test(x6)
+result
+t(apply(x1,1,sum))
+rowsum=t(apply(x1,1,sum))
+rowsum
+colsum=t(apply(x1,0,sum))
+colsum=t(apply(x1,0,sum))
+colsum=t(apply(x1,2,sum))
+colsum
+class(rowsum)
+typeof(rowsum)
+obsfreq=c(x1$1)
+obsfreq=t(c(x1[1,],x1[2,]))
+obsfreq
+obsfreq=(c(x1[1,],x1[2,]))
+obsfreq
+class(obsfreq)
+e=as.vector(rowsum)
+e
+class(e)
+value=(obsfreq-e)^2/(e)
+value
+class(value)
+276*100/(420)
+n=sum(rowsum)
+n
+n=sum(colsum)
+n
+E=rowsum*colsum/(n)
+r=as.vector(rowsum)
+R=as.vector(rowsum)
+C=as.vector(colsum)
+R
+C
+E=R*C/(n)
+E
+E=(R*C)/(n)
+e
+E
+value=(obsfreq-E)^2/(E)
+value
+B=sum(value)
+B
+source("C:/Users/OS-09/Desktop/r studio.R")
+lib
+library(help="datasets")
+randu
+iris
+dim(iris)
+str(iris)
+summary(iris)
+data.frame(iris)
+help.graphs()
+help()
+help(graphs)
+help?graphs
+table(iris)
+a=table(iris.Species)
+a=table(iris$Species)
+a
+barplot(a)
+barplot(iris$Species,xlab="Species", ylab="no of observation", main = "Bar Plot", col=c(3:1))
+barplot(a,xlab="Species", ylab="No. of Species", main = "Bar Plot", col=c(3:1))
+b=sample(0:100,7)
+b
+mysample.iris=iris[sample(1:nrows(iris),80]
+mysample.iris=iris(sample(1:nrows(iris),80)
+mysample.iris=iris(sample(1:nrows(iris),80,)
+mysample.iris=iris[sample(1:nrows(iris),80,]
+mysample.iris=iris[sample(1:nrow(iris),80,]
+mysample.iris=iris(sample(1:nrow(iris),80,)
+mysample.iris
+mysample.iris=iris[sample(1:nrow(iris),80),]
+mysample.iris
+barplot(mysample.iris,xlab="Species", ylab="No. of Species", main = "Bar Plot", col=c(3:1))
+a1=table(mysample.iris$Species)
+a1
+barplot(a1,xlab="Species", ylab="No. of Species", main = "Bar Plot", col=c(4:6))
+hist?help
+help?hist
+hist()
+c1=table(iris$Sepal.Length)
+c1
+h=hist(c1, xlab="Length of Sepal", 
+ylab="NO. of Sepal", main = "Histogram Plot", col=c(8:12),border="black")
+h
+ylab="NO. of Sepal", main = "Histogram Plot", col=c(12),border="black")
+h=hist(c1, xlab="Length of Sepal", ylab="No. of Sepal", main = "Histogram Plot", col =(12), border="black") 
+h
+h1=box(c1, xlab="Length of Sepal", ylab="No. of Sepal", main = "Histogram Plot", col =(4), border="black") 
+h1=boxplot(c1, xlab="Length of Sepal", ylab="No. of Sepal", main = "Box Plot", col =(4), border="black") 
+h1
+h2=data(mysample.iris$Species)
+h2=data(sample.iris$Sepal.Length, sample.iris$Sepal.Width, sample.iris$Petal.Length, sample.iris$Petal.Width)
+s=cbind(sample.iris$
+s=cbind( Sepal.Length, Sepal.Width, Petal.Length, Petal.Width)
+x=cbind(mysample.iris$Sepal.Length, mysample$Sepal.Width, mysample.iris$Petal.Length, mysample.iris$Petal.Width)
+x=cbind(mysample.iris$Sepal.Length, mysample$Sepal.Width, mysample.iris$Petal.Length, mysample.iris$Petal.Width)
+x=cbind(mysample.iris$Sepal.Length, mysample.iris$Sepal.Width, mysample.iris$Petal.Length, mysample.iris$Petal.Width)
+x
+h2=boxplot(x, xlab="Length of Iris data", ylab="No. of Iris Observation", main = "Box Plot", col =c(2:6), border="black") 
+h2
+h3=legend(x, xlab="Length of Iris data", ylab="No. of Iris Observation", main = "Legend", col =c(10:14), border="black") 
+legend("topright", legend=c("Sepal Length","Sepal Width", " Petal Length", "Petal Width"),fill(10:14)) 
+legend("topright", legend=c("Sepal Length","Sepal Width", " Petal Length", "Petal Width"),fill=c(10:14)) 
+h4=plot(x, xlab="Length of Iris data", ylab="No. of Iris Observation", main = "Legend", col =c(20:24), border="black") 
+h4=plot(x, xlab="Length of Iris data", ylab="No. of Iris Observation", type=",main = "Legend", col =c(20:24), border="black") 
+h4=plot(x, xlab="Length of Iris data", ylab="No. of Iris Observation", type="L",main = "Plot", col =c(20:24), border="black") 
+h4
+h4=plot(x, xlab="Length of Iris data", ylab="No. of Iris Observation", type="l",main = "Plot", col =c(20:24), border="black") 
+h4=plot(x, xlab="Length of Iris data", ylab="No. of Iris Observation", type="h",main = "Plot", col =c(20:24), border="black") 
+h5=plot(density(mysample.iris$Sepal.Length), xlab="Sepal Length", ylab="No. of Observation", main = "Density Plot", col =c(1:4), border="black") 
